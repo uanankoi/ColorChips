@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.3)
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1)
 }
 .card{
     width: 400px;
@@ -31,7 +31,7 @@ span{
     border: 5px black solid;
     box-shadow: 2px 2px 3px rgba(100, 100, 100, 0.7),inset 2px 2px 5px rgba(139, 139, 139, 0.6);
     font-size: 2rem;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 
 /* 576px */
