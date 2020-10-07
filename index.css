@@ -26,7 +26,6 @@ span{
     display: inline-block;
     width: 120px;
     height: 120px;
-    line-height: 120px;
     text-align: center;
     cursor: pointer;
     border: 5px black solid;
