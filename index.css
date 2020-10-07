@@ -24,11 +24,30 @@ h1{
 }
 span{
     display: inline-block;
-    font-weight: 100;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
     cursor: pointer;
     border: 5px black solid;
     box-shadow: 2px 2px 3px rgba(100, 100, 100, 0.7),inset 2px 2px 5px rgba(139, 139, 139, 0.6);
     font-size: 2rem;
-    padding: 10px 30px;
     background-color: #fff;
+}
+
+/* 576px */
+@media (max-width:576px){
+    .card{
+        width: 350px;
+    }
+    .hex{
+        font-size: 3rem;
+    }
+    span{
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        border: 3px black solid;
+        font-size: 1.5rem;
+    }
 }
