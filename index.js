@@ -8,8 +8,10 @@
  let hex = document.querySelector('.hex');
  let click = document.querySelector('.click');
  let body = document.querySelector('body');
+ let rgb = document.querySelector('.rgb');
  let createColor = '';
  let random = '';
+ let rgbColor='';
 
  // click在手機裝置文字更改
  if(isMobileDevice()){
@@ -35,10 +37,18 @@
 
  function color() {
      createColor='#';
+     rgbColor='RGB';
      for(i=0;i<6;i++){
        random = Math.floor(Math.random()*15)
        createColor  += hexColor[random]          
      }
      hex.innerText=createColor;
      body.style.backgroundColor=createColor;
+     // hex轉rgb  
+     let r = parseInt(createColor.substring(1,3),16);
+     let g = parseInt(createColor.substring(3,5),16);
+     let b = parseInt(createColor.substring(5,7),16);
+     rgbColor='RGB('+r+','+g+','+b+')';
+     rgb.innerText=rgbColor;
+
  }
